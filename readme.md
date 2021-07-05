@@ -1,8 +1,7 @@
 <a href="https://www.princetonalumniangels.org/" target = "_blank"><img src="./2018-2021/paa_logo.png" width="200" height="70" align="right"/></a> 
-
-
-##
-##
+<br>
+<br>
+<br>
 
 This data analysis project was started in the summer of 2021 by Leon Chen '23 and Asher Joy '23 in an effort to gather and analyze relevant information about PAA's startup pipeline and comparing it to the portfolio that the group is currently invested in.
 

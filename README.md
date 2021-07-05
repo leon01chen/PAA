@@ -1,7 +1,3 @@
----
-title-heading: false
----
-
 # Princeton Alumni Angels Data Analysis
 
 

@@ -9,4 +9,4 @@ We hope this analysis continues in the future as PAA grows its network of invest
 
 Below are links to analyese for different years:
 
-<a href="2018-2021.html" title="PAA Data Analysis 2018-2021">PAA Data Analysis 2018-2021</a>
+<a href="./2018-2021/2018-2021.html" title="PAA Data Analysis 2018-2021">PAA Data Analysis 2018-2021</a>

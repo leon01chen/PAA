@@ -13134,23 +13134,25 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Summary-">Summary <a id="summary" /><a class="anchor-link" href="#Summary-">&#182;</a></h2><p><strong>1)</strong> Startups that apply to PAA are largely ones that are seeking seed funding. This makes sense - startups in the seed funding round typically raise capital from close connections and angel investors.</p>
+<h2 id="Summary-">Summary <a id="summary" /><a class="anchor-link" href="#Summary-">&#182;</a></h2><p><strong>1)</strong> Applications to PAA have grown in number every year since forming in 2018, even through 2020. 2021 numbers will be calculated after applications close this year.</p>
+<p><a href="#applications">Link to Visuals and Code</a></p>
+<p><strong>2)</strong> Startups that apply to PAA are largely ones that are seeking seed funding. This makes sense - startups in the seed funding round typically raise capital from close connections and angel investors.</p>
 <p><a href="#funding">Link To Visuals and Code</a></p>
-<p><strong>2)</strong> The majority of startups (72.861%) that have applied to PAA have a Princeton connection. PAA seems to be making full use of its network.</p>
+<p><strong>3)</strong> The majority of startups (72.861%) that have applied to PAA have a Princeton connection. PAA seems to be making full use of its network.</p>
 <p><a href="#connection">Link to Visuals and Code</a></p>
-<p><strong>3)</strong> Startups that have applied to PAA are very diverse in the industry that they serve. Healthcare, and FinTech are industries that stick out, but this may be the case due to PAA's pitch cycle focuses.</p>
+<p><strong>4)</strong> Startups that have applied to PAA are very diverse in the industry that they serve. Healthcare, and FinTech are industries that stick out, but this may be the case due to PAA's pitch cycle focuses.</p>
 <p><a href="#industry">Link to Visuals and Code</a></p>
-<p><strong>4)</strong> The majority of startups (72.5%) that have applied to PAA since 2020 have at least one male on their founding team.</p>
+<p><strong>5)</strong> The majority of startups (72.5%) that have applied to PAA since 2020 have at least one male on their founding team.</p>
 <p>In addition, almost half of all startups (42.5%) that have applied to PAA since 2020 have <strong>at least one female</strong> on their founding team. We compared this statistic to the broader gender statistic in the startup landscape. It seems that PAA attracts more startups with diverse teams in terms of gender, but it's still too early to tell.</p>
 <p>PAA should still work towards encouraging more startups with diverse founding teams (and teams in general) to apply.</p>
 <p><a href="#gender">Link To Visuals and Code</a></p>
-<p><strong>5)</strong> The majority of startups (67.68%) that have applied to PAA since 2020 have at least one member on their founding team that identifies as White. This is followed closely by Asian.</p>
+<p><strong>6)</strong> The majority of startups (67.68%) that have applied to PAA since 2020 have at least one member on their founding team that identifies as White. This is followed closely by Asian.</p>
 <p>On the other hand, a minority of startups have at least one member on their founding team that identifies as Black, Hispanic/Latinx, or other races/ethnicities.</p>
 <p>In terms of race/ethnicity, PAA can definitely do better in encouraging more diverse startups to apply.</p>
 <p><a href="#race">Link To Visuals and Code</a></p>
-<p><strong>6)</strong> There are some startups (9.16%) that have applied to PAA since 2020 that have at least one founding member that has served in active duty.</p>
+<p><strong>7)</strong> There are some startups (9.16%) that have applied to PAA since 2020 that have at least one founding member that has served in active duty.</p>
 <p><a href="#serve">Link to Visuals and Code</a></p>
-<p><strong>7)</strong> New York and California are the most popular headquarters locations for startups that have applied to PAA. This is most likely due to the fact that PAA is based in these two states, so networking and marketing is easier. Perhaps PAA should think about where to market better to get the maximum outreach possible (e.g. Chicago).</p>
+<p><strong>8)</strong> New York and California are the most popular headquarters locations for startups that have applied to PAA. This is most likely due to the fact that PAA is based in these two states, so networking and marketing is easier. Perhaps PAA should think about where to market better to get the maximum outreach possible (e.g. Chicago).</p>
 <p><a href="#headquarters">Link to Visuals and Code</a></p>
 
 </div>
@@ -13208,10 +13210,127 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#df_data.head()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company Name</th>
+      <th>Pitch Year</th>
+      <th>Industry Served (organized)</th>
+      <th>State Headquartered</th>
+      <th>Princeton Connection? (Binary)</th>
+      <th>Total Amount Currently Raising</th>
+      <th>Amount Already Closed of the Total Currently Raising</th>
+      <th>[Gender] Does anyone on your founding team identify as:</th>
+      <th>[Race/Ethnicity] Does anyone on your founding team identify as:</th>
+      <th>Has anyone on your founding team ever served on active duty?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Thousand Fell</td>
+      <td>2018</td>
+      <td>Retail</td>
+      <td>New York</td>
+      <td>Yes</td>
+      <td>600000.0</td>
+      <td>50000.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Wheeli Corporation</td>
+      <td>2018</td>
+      <td>Transportation</td>
+      <td>New York</td>
+      <td>No</td>
+      <td>1000000.0</td>
+      <td>400000.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>MindHome Inc.</td>
+      <td>2018</td>
+      <td>Insurance</td>
+      <td>Colorado</td>
+      <td>Yes</td>
+      <td>1000000.0</td>
+      <td>250000.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Verstill</td>
+      <td>2018</td>
+      <td>Food &amp; Drink</td>
+      <td>Israel</td>
+      <td>Yes</td>
+      <td>1000000.0</td>
+      <td>100000.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Forte Nexus, Inc.</td>
+      <td>2018</td>
+      <td>Healthcare Technologies</td>
+      <td>New York</td>
+      <td>Yes</td>
+      <td>2000000.0</td>
+      <td>910000.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -13312,6 +13431,113 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Applications-have-grown-in-number-every-year-since-PAA-was-formed-">Applications have grown in number every year since PAA was formed <a id="applications" /><a class="anchor-link" href="#Applications-have-grown-in-number-every-year-since-PAA-was-formed-">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let's take a look at the number of applications PAA has received throughout the years and see if the group is expanding its network of startups.</p>
+<p>We leave out the current year 2021 since there are still pitch cycles coming up.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">copy</span> <span class="o">=</span> <span class="n">df_data</span><span class="p">[</span><span class="s2">&quot;Pitch Year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">values</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">vals</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
+    <span class="n">c</span><span class="p">[</span><span class="n">vals</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1">#delete 2021</span>
+<span class="k">del</span> <span class="n">c</span><span class="p">[</span><span class="mi">2021</span><span class="p">]</span>
+
+<span class="n">years</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">counts</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">c</span><span class="p">:</span>
+    <span class="n">years</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+    <span class="n">counts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">years</span><span class="p">,</span> <span class="n">counts</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;darkorange&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">18</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Number of Applications&#39;</span><span class="p">,</span> <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">13</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="s2">&quot;both&quot;</span><span class="p">,</span> <span class="n">colors</span> <span class="o">=</span> <span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">labelsize</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">percent18_19</span> <span class="o">=</span> <span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">2019</span><span class="p">]</span> <span class="o">-</span> <span class="n">c</span><span class="p">[</span><span class="mi">2018</span><span class="p">])</span><span class="o">/</span><span class="n">c</span><span class="p">[</span><span class="mi">2018</span><span class="p">]</span>
+<span class="n">percent19_20</span> <span class="o">=</span> <span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">2020</span><span class="p">]</span> <span class="o">-</span> <span class="n">c</span><span class="p">[</span><span class="mi">2019</span><span class="p">])</span><span class="o">/</span><span class="n">c</span><span class="p">[</span><span class="mi">2019</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Percent change from 2018 to 2019: &quot;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{:.3%}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">percent18_19</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Percent change from 2019 to 2020: &quot;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{:.3%}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">percent19_20</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2cAAAGSCAYAAABni7nmAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjQuMiwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8rg+JYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAr2UlEQVR4nO3de5Rf870//ufISJrIBUFwyKhLgokm1NGqfpu6RrVUpVqcKupeatFjOVRKXFpKnINyVIkm0VBVtEe1bkeOWy11O5NIIkElQqKEZDKTizSxf3/0Z06nLv1gPpmd+Twea71WP5+992f2a/eP9/LMe+/3rktSBAAAgE61Rmc3AAAAgHAGAABQCsIZAABACQhnAAAAJSCcAQAAlIBwBgAAUALCGQAAQAkIZwAAACUgnAEAAJSAcAYAAFACwhkAAEAJCGcAAAAlIJwBAACUgHAGAABQAsIZAABACQhnAAAAJSCcAQAAlIBwBgAAUALCGQAAQAkIZwAAACUgnAEAAJSAcAYAAFAC9Z3dAAAA7RVjOrsD6DrqTu3sDipn5gwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpglYSz7t2759prr82sWbOyaNGiPPXUU9l7772TJA0NDSmKIi0tLW01atSodr8dO3ZsmpubM2/evJxyyimromUAAIBVqn6VnKS+PnPmzMnw4cPz4osvZp999skvf/nLbLfddm3HrL322lm5cuU7fjt69OhstdVWaWhoyIYbbphJkyZl2rRpueuuu1ZF6wAAAKtEXZKiM07c1NSUc845J0888URmzZqV+vr6dw1nL7/8cg4//PDcc889SZJzzz03W221VQ4++OBV3TIAwCpRjOnsDqDrqDu1szuoXKc8c7bBBhtk0KBBmTp1atu22bNnZ86cObnuuuvSv3//JH+dTdt4443T1NTUdlxTU1MaGxtXec8AAADVtMrDWX19fSZOnJjx48dnxowZmT9/fnbcccc0NDTkk5/8ZPr06ZOJEycmSXr37p0kaW5ubvt9c3Nz+vTps6rbBgAAqKpV8szZ2+rq6nL99ddn+fLlOfHEE5MkixcvzhNPPJEkefXVV3PiiSfmlVdeSe/evdPa2pok6du3b1577bW2zy0tLauybQAAgKpbpTNnY8eOzYABAzJy5MisWLHiXY8pir8+ArfGGmtk4cKFmTt3boYOHdq2f+jQoe1uhwQAAOgKVlk4u+qqq7LNNttk3333zbJly9q277TTThk0aFDq6uqy7rrr5vLLL8+kSZOyaNGiJMmECRMyatSorL322hk8eHCOPvrojBs3blW1DQAAsEqsknA2cODAHHfccRk2bFheeeWVtveZHXLIIdl8881z5513pqWlJU8//XTefPPNdisxnn322Xn++ecze/bs3H///bn44ostow8AAHQ5nbaUPgAA785S+tBxLKUPAADAByKcAQAAlIBwBgAAUALCGQAAQAkIZwAAACUgnAEAAJSAcAYAAFACwhkAAEAJCGcAAAAlIJwBAACUgHAGAABQAsIZAABACQhnAAAAJSCcAQAAlIBwBgAAUALCGQAAQAkIZwAAACUgnAEAAJSAcAYAAFACwhkAAEAJCGcAAAAlIJwBAACUgHAGAABQAsIZAABACQhnAAAAJSCcAQAAlIBwBgAAUALCGQAAQAkIZwAAACUgnAEAAJSAcAYAAFACwhkAAEAJCGcAAAAlIJwBAACUgHAGAABQAsIZAABACQhnAAAAJSCcAQAAlEBF4axv37752Mc+liSpq6vLYYcdlm984xtVbQwAAKCWVBTO7rjjjmy33XZJktGjR+eHP/xhzj///PzgBz+oanMAAAC1oi5J8Y8Omj9/fjbYYIO89dZbee6557Lffvtl0aJFefjhh9PQ0LAK2gQAqB3FmM7uALqOulM7u4PK1VdyULdu3fLWW29l4MCB6d69e6ZNm5YkWWeddaraHAAAQK2oKJxNmTIlZ555ZgYOHJi77747SbLhhhumpaWlqs0BAADUiorC2Xe+851ceeWVWb58eQ4//PAkyZ577tkW1AAAAPhoKnrmDICO55kS6Bir0/MklTI+QMdZncaIimbOkqRHjx7Zaqut0qdPn3bbH3nkkQ5vCgAAoNZUFM723XffjB8/Pv369Wu3vSiK1NdXnO8AAAB4DxW95+ySSy7JOeeck969e6dbt25tJZgBAAB0jIrS1YABA3LZZZdVuxcAAICaVdHM2d13352ddtrpQ5+ke/fuufbaazNr1qwsWrQoTz31VPbee++2/bvttlumT5+exYsX57777svAgQPb/Xbs2LFpbm7OvHnzcsopp3zoPgAAAMqqopmzWbNm5fbbb89NN92UefPmtdt3wQUX/OOT1Ndnzpw5GT58eF588cXss88++eUvf5ntttsura2tufXWW3PUUUfl9ttvz3nnnZebbropO++8c5Jk9OjR2WqrrdLQ0JANN9wwkyZNyrRp03LXXXd9iMsFAAAop4qW0r/vvvvedXtRFNl9990/1ImbmppyzjnnpH///jn88MOzyy67JEl69eqV+fPnZ/vtt8+MGTPy8ssv5/DDD88999yTJDn33HOz1VZb5eCDD/5Q5wUoC0tlQ8dYnZbJrpTxATrO6jRGVDRztttuu3XoSTfYYIMMGjQoU6dOzfHHH5+mpqa2fUuWLMnzzz+fxsbG/PnPf87GG2/cbn9TU1P233//Du0HAACgs32g5RZ32mmnbLrppnnxxRfz2GOPfbgT1tdn4sSJGT9+fGbMmJHevXvntddea3dMc3Nz+vTpk969e7d9//t9AAAAXUlF4WyTTTbJ7bffnm222SavvvpqNthgg0yfPj377bdf5syZU/HJ6urqcv3112f58uU58cQTkyStra3p27dvu+P69u2blpaWtLa2tn1/O8C9vQ8AAKArqWi1xssuuyyPPfZY1l133QwcODD9+/fPo48+mssvv/wDnWzs2LEZMGBARo4cmRUrViRJpk6dmqFDh7Yd06tXr2yxxRaZOnVqFi5cmLlz57bbP3To0EydOvUDnRcAAKDsKgpnn/3sZ3PSSSdlyZIlSZLFixfnlFNOyWc+85mKT3TVVVdlm222yb777ptly5a1bb/tttsyZMiQHHDAAenRo0fOOuusTJ48OTNmzEiSTJgwIaNGjcraa6+dwYMH5+ijj864ceM+wCUCAACUX0XhbNmyZenXr1+7bf369cvy5csrOsnAgQNz3HHHZdiwYXnllVfS0tKSlpaWHHLIIZk/f35GjhyZH/zgB1mwYEE+9alP5aCDDmr77dlnn53nn38+s2fPzv3335+LL77YMvoAAECXU9FS+pdeeml22mmnnHnmmZk1a1Y222yznHfeeXn88cdz8sknV79LgC7IUtnQMVanZbIrZXyAjrM6jREVzZydfvrpmTx5cu64444899xzueOOO/L000/n9NNPr3Z/AAAANaGimbO/tf76679j6XsAPjj/Mg4dY3X6V/FKGR+g46xOY0RFM2d/SzADAADoeO/5nrMnn3wyO+ywQ5Jk5syZKYp3n2AbPHhwdToDAACoIe8Zzi6++OK2zz/4wQ/eM5wBAADw0X3gZ84A6BieKYGOsTo9T1Ip4wN0nNVpjKjombPm5uZ33f766693aDMAAAC1qqJwVldXV+0+AAAAatp7PnOWJFdffXWSpHv37m2f37b55ptnxowZ1esMAACghrxvOFtzzTWT/HXm7O3PSfLWW2/l0UcfzbXXXlvd7gAAAGrE+4azb33rW0mSadOmZcwYT6YCAABUS0XPnAlmAAAA1VVROOvfv39+/vOfZ968eVmxYkW7AgAA4KOrKJz9+Mc/zj/90z/lyCOPzOLFi7PffvvlD3/4Q04++eQqtwcAAFAb3veZs7fttttu2W677fLaa6/lrbfeyu9+97tMmTIlv/rVr3LFFVdUu0cAAIAur6KZszXXXDOvvfZakmTp0qXp1atX5syZk6233rqqzQEAANSKimbOZs6cmR122CFPPvlkmpqa8r3vfS/Nzc3585//XO3+AAAAakJF4ex73/teevTo0fb5F7/4Rfr06ZNjjjmmqs0BAADUiorC2aRJk9o+P/XUUxk8eHDVGgIAAKhFFT1z9pWvfCWNjY3ttjU2NubLX/5yVZoCAACoNRWFsx/96Ed544032m1bsGBBLrrooqo0BQAAUGsqCmcDBgzIvHnz2m2bO3duNtpoo6o0BQAAUGsqCmdz587Ntttu227btttum1deeaUqTQEAANSaisLZhAkTctNNN2XEiBHZfPPNM2LEiNx4440ZP358tfsDAACoCRWt1njRRRelX79+ufnmm7PWWmtl8eLFueqqq3LhhRdWuz8AAICaUJek+CA/WG+99TJ//vwqtQNQO4oxnd0BdA11p3Z2Bx3P+AAdZ3UaIyq6rfFvCWYAAAAd7z1va3zyySezww47JElmzpyZonj3CTYvpAYAAPjo3jOcXXzxxW2fzz///FXSDAAAQK36wM+cAdAxPFMCHWN1ep6kUsYH6Dir0xjxnjNnlb5g+u9fTg0AAMAH957h7KWXXnrP58ySpK6uLkVRpL6+otX4AQAAeB/vmaw+/vGPr8o+AAAAatp7hrMXX3xxVfYBAABQ0yp+z9nXv/71/P73v8+UKVPy+9//Pl//+ter2RcAAEBNqSicnXbaabnsssvy2GOP5T/+4z/y2GOP5dJLL81pp51W7f4AAABqQkVL6c+ePTv7779/nnrqqbZtw4YNy3/9139l4MCB1ewPoMuyVDZ0jNVpmexKGR+g46xOY0RFM2e9evXK5MmT222bMmVKevbsWZWmAAAAak1F4WzChAk55ZRT2m07+eSTM378+Ko0BQAAUGsquq3xnnvuyec+97nMnTs3s2fPTkNDQzbaaKM8+OCDeeutt9qOGzFiRDV7BehS3LYEHWN1umWpUsYH6Dir0xhR0RukH3zwwTz44IPV7gUAAKBmVRTOzj333Gr3AQAAUNMqCmdJsummm+aQQw7JJptskpdeeik33HBD5syZU83eAAAAakZFC4KMGDEiM2bMyBe/+MX069cvX/ziF/PMM894xgwAAKCDVDRzdvHFF+fII4/MjTfe2LbtoIMOyiWXXJK77rqras0BAADUiopWa1y0aFH69euXovi/Q+vq6tLc3Jy+fftWsz+ALstqbNAxVqeV2CplfICOszqNERXd1vg///M/+fznP99u2/Dhw3P//fdXoycAAICaU9Ftjc8991xuu+22/PrXv86sWbOy2WabZf/998/YsWNzxhlntB13wQUXVK1RAACArqyimbNhw4blySefzMCBA/O5z30uAwcOzJNPPpntt98+e+65Z/bcc8/sscce7/s3TjjhhDz22GNZtmxZfvazn7Vtb2hoSFEUaWlpaatRo0a17e/evXvGjh2b5ubmzJs3L6eccsqHvFQAAIDyqmjmbLfddvvIJ5o7d27OP//8jBgxIj179nzH/rXXXjsrV658x/bRo0dnq622SkNDQzbccMNMmjQp06ZNsxAJAADQpVQ0c/b3+vTpk29/+9tpamqq+De33XZbfvOb3+T111//QOc67LDDct5552XhwoV55plncs011+Twww//gB0DAACU2wcKZzvttFPGjh2buXPn5txzz83tt9/eYY3Mnj07c+bMyXXXXZf+/fsn+ets2sYbb9wuBDY1NaWxsbHDzgsAAFAG/zCc9e7dO8cff3yeeuqp/OEPf8iQIUNSFEW23377ds+GfVjz58/PjjvumIaGhnzyk59Mnz59MnHixLZzJ0lzc3Pb8c3NzenTp89HPi8AAECZvO8zZ9dee22+9rWvZenSpbnhhhty6KGH5umnn87cuXOzbNmyDmlg8eLFeeKJJ5Ikr776ak488cS88sor6d27d1pbW5Mkffv2zWuvvdb2uaWlpUPODQAAUBbvO3N2xBFHZNmyZTnppJNy6qmn5umnn656Q2+/6HqNNdbIwoULM3fu3AwdOrRt/9ChQzN16tSq9wEAALAqvW84+3//7//ld7/7Xa677rq8/PLLGTNmTBobG9sC1AfRrVu39OjRI926dWv3eaeddsqgQYNSV1eXddddN5dffnkmTZqURYsWJUkmTJiQUaNGZe21187gwYNz9NFHZ9y4cR/qYgEAAMrqfcPZH/7whxx++OHZeOON88Mf/jAjRozI5MmTM2DAgHzlK19Jt27dKj7RqFGjsmzZspxxxhk59NBDs2zZsowaNSqbb7557rzzzrS0tOTpp5/Om2++mYMPPrjtd2effXaef/75zJ49O/fff38uvvhiy+gDAABdTl2SDzQN9tnPfjbHHHNMRo4cmTfeeCObbrpplVoD6NqKMZ3dAXQNdad2dgcdz/gAHWd1GiM+8HvOHnrooXzzm9/MJptskjFjjBwAAAAd4UO9hDpJFixYkMsuu6wjewEAAKhZHzqcAQAA0HGEMwAAgBJ4z3C2//77t32ur3/fd1UDAADwEb1nOBs/fnzb59dff32VNAMAAFCr3nNKrLm5OXvttVemTJmSNdZYIxtuuGHq6urecdy8efOq2iAAAEAteM9wNmrUqNxyyy3p2bNnkuSll15qt7+uri5FUbjlEQAAoAO8Z7KaMGFCfv7zn2ejjTbKM888k8bGxlXZFwAAQE1532mvt956Ky+//HL22GOPvPjii6uqJwAAgJpT0T2Jjz76aHbcccd861vfyqabbpo5c+bkuuuuy+OPP17t/gAAAGpCRe85+/KXv5wHHngg/fr1y1NPPZW+ffvm/vvvb7fcPgAAAB9eRTNnZ599dkaOHJnf//73bdv23nvvXHjhhfn1r39drd4AAABqRkUzZ5tttlnuvPPOdtvuuuuuNDQ0VKUpAACAWlNROJs9e3b22GOPdtt23313i4QAAAB0kIpuazzvvPPym9/8Jr/61a/ywgsvZLPNNsvIkSNz2GGHVbs/AACAmlDRzNmtt96a3XffPUuWLMmOO+6YpUuXZs8998wtt9xS7f4AAABqQkUzZ0nyyCOP5JFHHqlmLwAAADWropkzAAAAqks4AwAAKAHhDAAAoAT+YTjr1q1bDjzwwHTv3n1V9AMAAFCT/mE4W7lyZa699tosX758VfQDAABQkyq6rfHxxx/PdtttV+1eAAAAalZFS+lPmjQpt99+e376059m9uzZeeutt9r23XjjjVVrDgAAoFbUJSn+0UF/+tOf3nV7URTZYostOrongJpQjOnsDqBrqDu1szvoeMYH6Dir0xhR0czZ5ptvXu0+AAAAatoHWkp/o402yqc+9alq9QIAAFCzKgpn66+/fu6555689NJLuffee5MkX/va13LllVdWtTkAAIBaUVE4u/zyy/PCCy9k/fXXz1/+8pckyX333Zc999yzqs0BAADUioqeOdt1113T0NCQN998M0Xx1/VD5s+fnw022KCqzQEAANSKimbO3nzzzdTXt89x66yzTt54442qNAUAAFBrKgpnd999dy655JJ2Ae2cc87JHXfcUbXGAAAAaklFtzWedtpp+fWvf50FCxbkYx/7WBYsWJCmpqZ8+ctfrnZ/AAAANaGicLZgwYIMHz48n/zkJ7PZZptl9uzZefzxx6vdGwAAQM2oKJy97YknnsisWbPy+uuvV6sfAACAmlTRM2c9e/bMT37ykyxevDh//vOfs3jx4lx11VXp1atXtfsDAACoCRWFsyuvvDJDhgzJvvvum0GDBmW//fZLY2Njrrjiimr3BwAAUBMquq1x3333zTbbbJP58+cnSf70pz9l8uTJmT59elWbAwAAqBUVzZy1trZm6dKl7bYtXbo0LS0tVWkKAACg1lQUzs4666xcd911aWhoSF1dXTbbbLNcc801+f73v1/t/gAAAGpCXZLi3XYsX748RfF/u+rr69t9r6ury4oVK9KjR4+qNwnQFRVjOrsD6BrqTu3sDjqe8QE6zuo0RrznM2d77LHHquwDAACgpr1nOHvggQdWZR8AAAA1reKXUH/605/OjjvumD59+rTbfsEFF3R4UwAAALWmonB23nnn5dRTT01TU1OWLFnStr0oCuEMAACgA1QUzo499tjstNNOmTJlSrX7AQAAqEkVLaW/dOnSTJs2rdq9AAAA1KyKwtm///u/Z9SoUdXuBQAAoGZVFM5uvvnmHHzwwVmwYEFmzJjRrip1wgkn5LHHHsuyZcvys5/9rN2+3XbbLdOnT8/ixYtz3333ZeDAgW37unfvnrFjx6a5uTnz5s3LKaecUvE5AQAAVhcVPXN200035aWXXsqll17abkGQD2Lu3Lk5//zzM2LEiPTs2bNte//+/XPrrbfmqKOOyu23357zzjsvN910U3beeeckyejRo7PVVluloaEhG264YSZNmpRp06blrrvu+lB9AAAAlFFF4WzYsGFZb7318uabb37oE912221Jkh133DGbbLJJ2/YDDjggU6dOza9+9askfw1j8+fPz+DBgzNjxowcdthhOfzww7Nw4cIsXLgw11xzTQ4//HDhDAAA6FIquq1x+vTpWWeddarSQGNjY5qamtq+L1myJM8//3waGxuz9tprZ+ONN263v6mpKY2NjVXpBQAAoLNUNHM2bty43HLLLRkzZkxeeeWVdvseeeSRj9RA796989prr7Xb1tzcnD59+qR3795t3/9+HwAAQFdSUTj78Y9/nCRttx6+rSiK1NdX9CfeU2tra/r27dtuW9++fdPS0pLW1ta2728HuLf3AQAAdCUV3dbYrVu3d62PGsySZOrUqRk6dGjb9169emWLLbbI1KlTs3DhwsydO7fd/qFDh2bq1Kkf+bwAAABlUlE46wjdunVLjx492oLd259vu+22DBkyJAcccEB69OiRs846K5MnT25bpn/ChAkZNWpU1l577QwePDhHH310xo0bt6raBgAAWCUqmvq6++67UxTFu+4bMWJERScaNWpURo8e3fb90EMPzejRo3POOedk5MiRueKKK/Lzn/88jz76aA466KC2484+++xcddVVmT17dpYuXZof/ehHVmoEAAC6nLok7566/sZZZ53V7vvGG2+cr371qxk3blxOPfXUavUG0KUVYzq7A+ga6rrgf4oYH6DjrE5jREUzZ+eee+47tl1//fX5zne+0+ENAQAA1KIP/czZww8/nL333rsjewEAAKhZH2q5xfr6+hx11FGZP39+R/cDAABQkyoKZ8uXL2+3IEi3bt3S2tqaI444omqNAQAA1JKKwtkee+zR7ntLS0tmzpyZxYsXV6UpAACAWlNROHvggQeq3QcAAEBNe99wduihh/7DP3D99dd3WDMAAAC16n3fczZz5sx33V4URdZff/307ds39fUfak0RgJrnPUbQMVandxhVyvgAHWd1GiPeN1kNGjToHdvWWWednHXWWTn22GMzfvz4qjUGAABQSyp+z1l9fX3+9V//Nc8991y22WabfOpTn8qRRx5Zzd4AAABqRkX3JH7961/PBRdckNbW1hxyyCG56667qt0XAABATXnfcLbLLrtkzJgx2WSTTXLWWWdl3Lhx7d53BgAAQMd43wVBVq5cmfnz5+eaa655z3eaXXDBBdXqDaBL88A/dIzV6WH/ShkfoOOsTmPE+86cPfDAAymKIp/5zGfedX9RFMIZAABAB3jfcLbrrruuqj4AAABqWsWrNQIAAFA9whkAAEAJCGcAAAAlIJwBAACUgHAGAABQAsIZAABACQhnAAAAJSCcAQAAlMD7voSaj6YY09kdQNdRd2pndwAAUF1mzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEqgNOFs0qRJWbp0aVpaWtLS0pJnnnmmbd/BBx+cWbNmpbW1NbfddlvWWWedTuwUAACg45UmnCXJiSeemD59+qRPnz7ZeuutkyTbbrttrr766hx66KEZMGBAlixZkv/8z//s5E4BAAA6Vn1nN/CP/Mu//Etuv/32PPjgg0mS73//+5k+fXp69+6d1tbWTu4OAACgY5Rq5uyCCy7Ia6+9loceeijDhw9PkjQ2NqapqantmD/96U9Zvnx5Bg0a1FltAgAAdLjSzJz927/9W6ZNm5bly5fnoIMOyu23355hw4ald+/eaW5ubndsc3Nz+vTp00mdAgAAdLzSzJz98Y9/TGtra5YvX54JEybk4Ycfzj777JPW1tb07du33bF9+/ZNS0tLJ3UKAADQ8UoTzv5eURSpq6vL1KlTM3To0LbtH//4x9OjR4/MnDmzE7sDAADoWKUIZ/369ctee+2VHj16pFu3bjnkkEPyuc99LnfeeWcmTpyYfffdN5/97GfTq1evnHvuubn11lstBgIAAHQppXjmbM0118z555+frbfeOitXrswzzzyT/fffP88++2yS5LjjjsvEiRPTv3//3HvvvTniiCM6uWMAAICOVZek6OwmuqpiTGd3AF1H3amd3UHHM0ZAxzA+AO9ndRojSnFbIwAAQK0TzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwAAgBJYLcLZOuusk1tvvTWtra2ZNWtWDj744M5uCQAAoEPVd3YDlbjyyiuzfPnyDBgwIMOGDcsdd9yRpqamTJs2rbNbAwAA6BB1SYrObuL99OrVKwsWLMiQIUPy7LPPJkkmTJiQl19+OWeccUaSZOHChZ3YIQAAwAe39tprt/te+tsaBw0alBUrVrQFsyRpampKY2NjJ3YFAADQsUofznr37p1Fixa129bc3Jw+ffp0UkcAAAAdr/TPnLW2tqZv377ttvXt2zctLS1t3/9+OhAAAGB1U/qZs5kzZ6a+vj5bbrll27ahQ4dm6tSpndgVAABAxyr9giBJcuONN6Yoihx11FEZNmxYfve73+Uzn/mM1RoBAIAuo/QzZ0ny7W9/Oz179syrr76aG2+8Mccff7xgBgAAdCmrRThbsGBBvvKVr6R3795paGjIjTfe2NktUULdu3fPtddem1mzZmXRokV56qmnsvfee7ft32233TJ9+vQsXrw49913XwYOHNi278ADD8zDDz+cxYsXZ9KkSe/427vuumueeOKJNDc35/nnn8/RRx+9Sq4J6BjVHB++9KUvZcqUKWlpacnDDz+cbbbZZpVcE9BxPsoYcfHFF2fmzJlZtGhRpk+fnkMPPbTd3x46dGgef/zxLF68OI8//niGDh26yq6L1VOhVFeoXr16FWeffXbR0NBQ1NXVFV/84heLRYsWFQ0NDUX//v2LhQsXFl/96leLHj16FBdddFHxyCOPtP129913Lw488MDi+9//fjFp0qR2f7e+vr5YuHBhccwxxxRJih133LFoaWkpPvGJT3T6NSulKqtqjQ9bbrll0dzcXOyyyy5Ft27ditNPP7149tlni27dunX6NSulKq+PMkaMHj26GDx4cFFXV1fstNNOxRtvvFHsvPPORZJizTXXLGbNmlWcfPLJRffu3YvvfOc7xaxZs4o111yz069ZlbY6vQGlqlZNTU3FAQccUBx99NHFww8/3La9V69exZIlS4rBgwe3O/7II498x398bbDBBkVRFEXPnj3btv3xj38sDjrooE6/PqXUh6+OGB9OOOGE4re//W3b97q6umLJkiXFbrvt1unXp5T6aPVBx4i36ze/+U3x3e9+t0hS7LnnnsVLL73Ubv/s2bOLESNGdPr1qXLWanFbI3wYG2ywQQYNGpSpU6emsbExTU1NbfuWLFmS559/vqKXmb/66qu54YYbcsQRR2SNNdbIpz/96TQ0NOShhx6qZvtAFXXU+JAkdXV17T7X1dVlyJAhHd4zsOp82DHiYx/7WP75n/+5bVXxxsbGTJ48ud0xkydPrnh8ofYIZ3RJ9fX1mThxYsaPH58ZM2akd+/eaW5ubnfMB3mZ+Y033pizzjorb775Zh588MGceeaZeemll6rROlBlHTk+3HvvvRk+fHiGDx+eNddcM9/73vfSvXv39OrVq1rtA1X2UcaIn/zkJ2lqaspdd92VJB/5vz+oPcIZXU5dXV2uv/76LF++PCeeeGKSyl5m/l4GDx6cX/ziF/nmN7+Z7t27p7GxMaeddlr22WefqvQPVE9Hjw8zZszIYYcdliuuuCLz5s3Leuutl2nTpvnHG1hNfZQx4qKLLsqQIUPyta99rW3bRxlfqE3CGV3O2LFjM2DAgIwcOTIrVqxIkkydOrXd6ki9evXKFltsUdHLzIcMGZKZM2fm7rvvTlEUmTlzZu6444584QtfqNo1ANXR0eNDktxyyy3Zbrvtst566+Xss8/OZpttlscee6wq/QPV9WHHiNGjR+cLX/hC9tprr3bBa+rUqfnEJz7R7hyf+MQnKh5fqE2d/uCbUh1VV111VfHII48Ua621Vrvt6623XrFw4cLigAMOKHr06FFceOGF7VZaWmONNYoePXoUxx57bHH//fcXPXr0KOrr64skxeabb160tLQUu+66a9v3Z599tjj66KM7/XqVUpVXNcaHJMUOO+xQrLHGGsV6661X3HTTTcXEiRM7/VqVUh+8PuwYcfrppxczZ84sBgwY8I6/+fZqjSeddFLRvXv34oQTTrBao/pH1ekNKNUhNXDgwKIoimLp0qVFS0tLWx1yyCFF8tflsKdPn14sWbKkmDRpUtHQ0ND228MOO6z4ez/72c/a9h944IHFlClTikWLFhVz5swpLrzwwqKurq7Tr1kpVVlVc3x48MEHi0WLFhWvv/568ZOf/KTo1atXp1+vUuqD1UcZI4qiKJYtW9bud2eccUbb/mHDhhWPP/54sWTJkuKJJ54ohg0b1unXq8pbdf//BwAAADqRZ84AAABKQDgDAAAoAeEMAACgBIQzAACAEhDOAAAASkA4AwAAKAHhDAAAoASEMwC6nJtvvjkrVqzILrvs8q77d9lll6xYsSI333zzKu4MAN6bl1AD0OWst956efrpp9PS0pKhQ4dmyZIlbft69uyZyZMnp0+fPmlsbMzrr7/eiZ0CwP8xcwZAlzN//vwce+yx2XLLLXPRRRe12/ejH/0oW265ZY455phVFszq6+vTo0ePVXIuAFZvhVJKKdUVa/z48cXKlSuL3XbbrUhSDB8+vFi5cmUxbty4Ikmx5ZZbFhMmTCjmzp1bvPnmm8ULL7xQXHTRRUWvXr3a/Z3BgwcXV155ZfH0008XixYtKhYvXlw8/vjjxZFHHvmOc5599tlFURTFtttuW1xyySXFnDlzihUrVhTDhw/v9P8/lFJKlbvqAwBd1EknnZRdd9011113XXbeeedcd911efnll3PSSSdlhx12yH333ZeFCxfm6quvzssvv5yhQ4fmpJNOyi677JLhw4dnxYoVSZLPf/7z+dznPpff/va3eeGFF7LWWmvlwAMPzLXXXpv1118/F1544TvOPXHixCxdujSXXHJJiqLIvHnzVvXlA7Aa6vSEqJRSSlWr9txzz6IoiuLVV18tVq5cWeyxxx5FkuJ///d/i+nTpxe9e/dud/z+++9fFEVRHHbYYW3b/n4mLUlRV1dXTJo0qVi4cGFRX1/ftv3tmbNJkyYV3bp16/TrV0optfqUZ84A6NLuueeeXH311Vl//fVzzTXX5N57782QIUMydOjQ3HDDDenRo0f69+/fVg899FBaW1uz1157tf2Nv11QpEePHll33XWz7rrr5u67706/fv2y9dZbv+O8l156aVauXLlKrhGArkE4A6DLe+SRR9r97zbbbJMkOffcczN//vx29dprr6V3794ZMGBA2+/XWmutXHzxxZk9e3aWLVuW119/PfPnz88Pf/jDJMk666zzjnPOnDmz2pcFQBfjmTMAak5dXV2SZMyYMbnzzjvf9ZgFCxa0fb7hhhvypS99KT/96U/zwAMP5PXXX8/KlSuzzz775Lvf/W7WWOOd/9b5t7NtAFAJ4QyAmvPss88mSVauXJn//u//ft9j+/Xrly996Uu5/vrrc/zxx7fbt8cee1StRwBqj9saAag5Tz31VKZMmZLjjjsuH//4x9+xv1u3bm23Kr793Njbs21v23DDDXPUUUdVv1kAaoaZMwBq0qGHHpr77rsvkydPznXXXZepU6emV69e2XLLLXPAAQfkjDPOyPjx49Pa2pq777473/jGN7J06dI89thjaWhoyLHHHpsXXngh6623XmdfCgBdhHAGQE1qamrK9ttvnzPOOCP77bdfjjvuuLS0tGTWrFkZN25cu9sdv/GNb+TCCy/Mvvvum8MOOyzPPvtszjzzzPzlL3/JuHHjOu8iAOhS6vLXNfUBAADoRJ45AwAAKAHhDAAAoASEMwAAgBIQzgAAAEpAOAMAACgB4QwAAKAEhDMAAIASEM4AAABKQDgDAAAogf8Pky4OdQbOR64AAAAASUVORK5CYII=
+"
+>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Percent change from 2018 to 2019:  176.000%
+Percent change from 2019 to 2020:  36.715%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The explosive growth from 2018 to 2019 (176% !!!) can most likely be attributed to the fact that applications in 2018 only opened up late summer, resulting in fewer application numbers for the entire year and thus a huge percent increase when comparing 2019 application numbers.</p>
+<p>2020 seemed to still be a solid application year even facing the pandemic, with a 36.715% increase in applications from 2019.</p>
+<p>2021 numbers will be calculated after applications close for this year.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">

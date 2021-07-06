@@ -35,6 +35,5 @@ We hope this analysis continues in the future as PAA grows its network of invest
 
 
 <br><br><br>
-Contributors:
----
+## Contributors:
 Leon Chen '23 (leonchen@princeton.edu), Asher Joy '23 (asherj@princeton.edu)

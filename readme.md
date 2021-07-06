@@ -29,7 +29,10 @@ We hope this analysis continues in the future as PAA grows its network of invest
 ## Below are links to analyses for different years:
 **2018-Summer 2021 Analysis**: <a href="./2018-2021/2018-2021.html" target = "_blank" title="Link to Analysis">Link to Analysis</a>
 
-
-<br><br>
-## Contributors:
+## Contributors
 Leon Chen '23 (leonchen@princeton.edu), Asher Joy '23 (asherj@princeton.edu)
+
+
+
+
+

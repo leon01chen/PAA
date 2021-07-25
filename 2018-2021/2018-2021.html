@@ -13173,7 +13173,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13193,7 +13193,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;PAA_Data - Jupyter.csv&quot;</span><span class="p">)</span>
@@ -13210,7 +13210,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_list</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13253,7 +13253,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_2018</span> <span class="o">=</span> <span class="n">all_data</span><span class="p">[</span><span class="s2">&quot;Pitch Year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="n">side</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
@@ -13277,7 +13277,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">princeton_orange</span> <span class="o">=</span> <span class="s2">&quot;#f58025&quot;</span>
@@ -13360,7 +13360,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">counts</span> <span class="o">=</span> <span class="n">all_data</span><span class="p">[</span><span class="s2">&quot;Pitch Year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="n">first_2021</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -13457,7 +13457,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_counts</span><span class="p">,</span> <span class="n">all_percents</span><span class="p">,</span> <span class="n">mpl_pane</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
@@ -13490,7 +13490,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -13499,7 +13499,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="970"
             height="500"
-            src="2018-2021/visuals/tabs1.html"
+            src="visuals/tabs1.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13542,7 +13542,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">label_fit</span><span class="p">(</span><span class="n">cats</span><span class="p">):</span>
@@ -13590,7 +13590,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -13599,7 +13599,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="500"
-            src="2018-2021/visuals/tabs2.html"
+            src="visuals/tabs2.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13640,7 +13640,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_counts</span><span class="p">,</span> <span class="n">all_percents</span><span class="p">,</span> <span class="n">mpl_pane</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
@@ -13674,7 +13674,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -13683,7 +13683,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="970"
             height="635"
-            src="2018-2021/visuals/tabs3.html"
+            src="visuals/tabs3.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13726,7 +13726,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">first_gender</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13784,7 +13784,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -13793,7 +13793,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="490"
-            src="2018-2021/visuals/tabs4.html"
+            src="visuals/tabs4.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13858,7 +13858,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Now for Race/Ethnicity</span>
@@ -13925,7 +13925,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -13934,7 +13934,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="490"
-            src="2018-2021/visuals/tabs5.html"
+            src="visuals/tabs5.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -14019,7 +14019,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">race_data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14052,7 +14052,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -14061,7 +14061,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="970"
             height="500"
-            src="2018-2021/visuals/tabs6.html"
+            src="visuals/tabs6.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -14103,7 +14103,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">not_applicable</span><span class="p">(</span><span class="n">copy</span><span class="p">):</span>
@@ -14144,7 +14144,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14153,7 +14153,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="490"
-            src="2018-2021/visuals/tabs7.html"
+            src="visuals/tabs7.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -14195,7 +14195,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_counts</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14231,7 +14231,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -14240,7 +14240,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="960"
             height="570"
-            src="2018-2021/visuals/tabs8.html"
+            src="visuals/tabs8.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -14265,7 +14265,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[216]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>

@@ -13137,7 +13137,7 @@ div#notebook {
 <p><a href="#applications">Link to Visuals and Code</a></p>
 <p><strong>2)</strong> The majority of startups that have applied to PAA have a Princeton connection. In addition, the majority of startups in PAA's portfolio also have a Princeton connection. PAA seems to be making full use of its network.</p>
 <p><a href="#connection">Link to Visuals and Code</a></p>
-<p><strong>3)</strong> The majority of startups that have applied to PAA hear about PAA from the organization itself. The same follows PAA's portfolio. This is followed closesly by other alumni.</p>
+<p><strong>3)</strong> The majority of startups that have applied to PAA indicate that they hear about PAA from the organization itself. The same follows PAA's portfolio. This is followed closesly by other alumni.</p>
 <p><a href="#hear">Link to Visuals and Code</a></p>
 <p><strong>4)</strong> Startups that have applied to PAA are very diverse in the industry that they serve. Healthcare is the dominant industry in startups that apply to PAA and is also the most common industry among PAA's portfolio.</p>
 <p><a href="#industry">Link to Visuals and Code</a></p>
@@ -13152,6 +13152,7 @@ div#notebook {
 <p>In terms of race/ethnicity, PAA can definitely do better in encouraging more diverse startups to apply.</p>
 <p><a href="#race">Link To Visuals and Code</a></p>
 <p><strong>7)</strong> There are very few startups that have applied to PAA since 2020 that have at least one founding member that identifies as LGBTQ+. There are no startups in PAA's portfolio that have at least one founding member that identifies as LGBTQ+.</p>
+<p>It should be noted that there was no dedicated section in the application asking for LGBTQ+ connections - the analysis we have performed here is largely inconclusive.</p>
 <p><a href="#lgbtq">Link to Visuals and Code</a></p>
 <p><strong>8)</strong> There are some startups that have applied to PAA since 2020 that have at least one founding member that has served in active duty. There are also some startups in PAA's portfolio that have at least one founding member that has served in active duty.</p>
 <p><a href="#serve">Link to Visuals and Code</a></p>
@@ -13172,7 +13173,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[202]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13192,7 +13193,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[203]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;PAA_Data - Jupyter.csv&quot;</span><span class="p">)</span>
@@ -13209,7 +13210,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[204]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_list</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13252,7 +13253,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[205]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">first_2018</span> <span class="o">=</span> <span class="n">all_data</span><span class="p">[</span><span class="s2">&quot;Pitch Year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="n">side</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
@@ -13276,7 +13277,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[206]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">princeton_orange</span> <span class="o">=</span> <span class="s2">&quot;#f58025&quot;</span>
@@ -13351,7 +13352,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's take a look at the number of applications PAA has received throughout the years and see if the group is expanding its network of startups.</p>
+<p>Let's take a look at the number of applications PAA has received throughout the years and see if the group is expanding its network of startups and investors.</p>
 <p>We leave out the current year 2021 since there are still pitch cycles coming up.</p>
 
 </div>
@@ -13359,7 +13360,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[207]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">counts</span> <span class="o">=</span> <span class="n">all_data</span><span class="p">[</span><span class="s2">&quot;Pitch Year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="n">first_2021</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -13448,14 +13449,15 @@ Percent change from 2019 to 2020:  36.715%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>PAA encourages Princeton connected startups to apply and invest in them. Let's calculate the statistic for startups and whether or not they are Princeton connected, filtered by year and portfolio:</p>
+<p>PAA encourages Princeton connected startups to apply and invest in them. Startups had the option to list their Princeton connection in their application, and we converted this to binary Yes/No data for easier use.</p>
+<p>Let's calculate the statistic for startups and whether or not they are Princeton connected, filtered by year and portfolio:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[217]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_counts</span><span class="p">,</span> <span class="n">all_percents</span><span class="p">,</span> <span class="n">mpl_pane</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
@@ -13475,6 +13477,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <span class="c1">#tabs.save(&quot;visuals/tabs1.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs1.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">970</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs1.html&#39;, width=970, height=500)</span>
 </pre></div>
 
     </div>
@@ -13487,7 +13490,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[217]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13496,7 +13499,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="970"
             height="500"
-            src="visuals/tabs1.html"
+            src="2018-2021/visuals/tabs1.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13531,7 +13534,7 @@ Percent change from 2019 to 2020:  36.715%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The startup application includes a question asking where the applying startup heard about PAA.</p>
+<p>The startup application includes a question asking where the applying startup heard about PAA. The startup is able to indicate multiple options for sources (for example, a startup can indicate that they heard about PAA from both Princeton alumni and the Princeton Entrepreneurship Council).</p>
 <p>The graphs below show the <strong>top 5</strong> sources for how startups heard about PAA, filtered by year and portfolio:</p>
 
 </div>
@@ -13539,7 +13542,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[218]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">label_fit</span><span class="p">(</span><span class="n">cats</span><span class="p">):</span>
@@ -13574,6 +13577,7 @@ Percent change from 2019 to 2020:  36.715%
                <span class="p">(</span><span class="s2">&quot;2020&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">3</span><span class="p">]),</span> <span class="p">(</span><span class="s2">&quot;Portfolio&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
 <span class="c1">#tabs.save(&quot;visuals/tabs2.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs2.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">955</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs2.html&#39;, width=955, height=500)</span>
 </pre></div>
 
     </div>
@@ -13586,7 +13590,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[218]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13595,7 +13599,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="500"
-            src="visuals/tabs2.html"
+            src="2018-2021/visuals/tabs2.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13636,7 +13640,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[219]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_counts</span><span class="p">,</span> <span class="n">all_percents</span><span class="p">,</span> <span class="n">mpl_pane</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
@@ -13657,6 +13661,7 @@ Percent change from 2019 to 2020:  36.715%
               <span class="p">(</span><span class="s2">&quot;Portfolio&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
 <span class="c1">#tabs.save(&quot;visuals/tabs3.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs3.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">970</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">635</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs3.html&#39;, width=970, height=635)</span>
 </pre></div>
 
     </div>
@@ -13669,7 +13674,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[219]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13678,7 +13683,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="970"
             height="635"
-            src="visuals/tabs3.html"
+            src="2018-2021/visuals/tabs3.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13712,16 +13717,16 @@ Percent change from 2019 to 2020:  36.715%
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>At the beginning of 2020, the application form that startups had to fill out in order to apply to PAA started inncluding the following question in relation to gender and sexuality: <strong>"Does anyone on your founding team identify as (select all that apply):</strong>.</p>
-<p>Options included Male, Female, Gay, Non-Binary/Third Gender, Prefer not to say, and a "fill in your blank" answer (which peculiarly, all the groups that chose this option answered "Human being").</p>
-<p>The graphs below show <strong>(1)</strong> the number of startups that have at least one team member that identifies as the respective categories and <strong>(2)</strong> the percentage of startups that have at least one team member that identifies as the respective categories.</p>
-<p>Note that startups can have multiple founders - this is why the percentages don't add up to $100$% (for the pie charts). They should be read as <strong>X% of startups have at least one founding team member that indentifies as '''category'''</strong>.</p>
+<p>Options included Male, Female, Non-Binary/Third Gender, Prefer not to say, and a "fill in your blank" answer (which peculiarly, all the groups that chose this option answered "Human being").</p>
+<p>The graphs below show the number of startups that have <strong>at least one team member that identifies as the respective categories</strong>, with the percentage of startups next to the bars.</p>
+<p>Note that startups can have multiple founders - this is why the percentages don't add up to $100$%. They should be read as <strong>X% of startups have at least one founding team member that indentifies as <em>CATEGORY</em></strong>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[220]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">first_gender</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13766,6 +13771,7 @@ Percent change from 2019 to 2020:  36.715%
 <span class="n">tabs</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">Tabs</span><span class="p">((</span><span class="s2">&quot;All&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="p">(</span><span class="s2">&quot;Portfolio&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 <span class="c1">#tabs.save(&quot;visuals/tabs4.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs4.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">955</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">490</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs4.html&#39;, width=955, height=490)</span>
 </pre></div>
 
     </div>
@@ -13778,7 +13784,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[220]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -13787,7 +13793,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="490"
-            src="visuals/tabs4.html"
+            src="2018-2021/visuals/tabs4.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -13844,15 +13850,15 @@ Percent change from 2019 to 2020:  36.715%
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>At the beginning of 2020, another question was introduced to the application in regards to race/ethnicity: <strong>"Does anyone on your founding team identify as (select all that apply):</strong>.</p>
 <p>The question had a range of possible selections including White, Asian, African-American/Black, Hispanic/Latinx and other answers, including one to specify one not listed.</p>
-<p>The graphs below show <strong>(1)</strong> the number of startups that have at least one team member that identifies as the respective categories and <strong>(2)</strong> the percentage of startups that have at least one team member that identifies as the respective categories.</p>
-<p>Note that startups can have multiple founders - this is why the percentages don't add up to $100$% (for the pie charts). They should be read as <strong>X% of startups have at least one founding team member that indentifies as '''category'''</strong>.</p>
+<p>The graphs below show the number of startups that have <strong>at least one team member that identifies as the respective categories</strong>, with the percentage of startups next to the bars.</p>
+<p>Note that startups can have multiple founders - this is why the percentages don't add up to $100$%. They should be read as <strong>X% of startups have at least one founding team member that indentifies as <em>CATEGORY</em></strong>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[221]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Now for Race/Ethnicity</span>
@@ -13906,6 +13912,7 @@ Percent change from 2019 to 2020:  36.715%
 <span class="n">tabs</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">Tabs</span><span class="p">((</span><span class="s2">&quot;All&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="p">(</span><span class="s2">&quot;Portfolio&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 <span class="c1">#tabs.save(&quot;visuals/tabs5.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs5.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">955</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">490</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs5.html&#39;, width=955, height=490)</span>
 </pre></div>
 
     </div>
@@ -13918,7 +13925,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[221]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -13927,7 +13934,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="490"
-            src="visuals/tabs5.html"
+            src="2018-2021/visuals/tabs5.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -14004,14 +14011,15 @@ Percent change from 2019 to 2020:  36.715%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>At the beginning of 2020, startups also had the option to indicate whether or not they had members that identified as LGBTQ+ by utilizing the "other" option in the "Gender" section of the application. Unfortunately, this detracts from the accuracy of the LGBTQ statistics we calculated as there was no separate question asking for LGBTQ+. We leave the statistics and visuals in to serve as a benchmark in the future:</p>
+<p>At the beginning of 2020, startups also had the option to indicate whether or not they had members that identified as LGBTQ+ by utilizing the "other" option in the "Gender" section of the application. We converted this to binary Yes/No data by looking for key LGBTQ+ words.</p>
+<p>Unfortunately, this detracts from the accuracy of the LGBTQ statistics we calculated as there was no separate question asking for LGBTQ+. We leave the statistics and visuals in to serve as a benchmark in the future:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[222]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">race_data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14031,6 +14039,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <span class="c1">#tabs.save(&quot;visuals/tabs6.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs6.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">970</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs6.html&#39;, width=970, height=500)</span>
 </pre></div>
 
     </div>
@@ -14043,7 +14052,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[222]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14052,7 +14061,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="970"
             height="500"
-            src="visuals/tabs6.html"
+            src="2018-2021/visuals/tabs6.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -14086,7 +14095,7 @@ Percent change from 2019 to 2020:  36.715%
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>At the beginning of 2020, another question was introduced to the application in regards to active duty: <strong>Has anyone on your founding team ever served on active duty?</strong>.</p>
+<p>At the beginning of 2020, another question was introduced to the application in regards to active duty: <strong>Has anyone on your founding team ever served on active duty?</strong>. We treat a non-response as a "not applicable" answer.</p>
 <p>Let's calculate the statistics below:</p>
 
 </div>
@@ -14094,7 +14103,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[223]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">not_applicable</span><span class="p">(</span><span class="n">copy</span><span class="p">):</span>
@@ -14122,6 +14131,7 @@ Percent change from 2019 to 2020:  36.715%
 <span class="n">tabs</span> <span class="o">=</span> <span class="n">pn</span><span class="o">.</span><span class="n">Tabs</span><span class="p">((</span><span class="s2">&quot;All&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="p">(</span><span class="s2">&quot;Portfolio&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
 <span class="c1">#tabs.save(&quot;visuals/tabs7.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs7.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">955</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">490</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs7.html&#39;, width=955, height=490)</span>
 </pre></div>
 
     </div>
@@ -14134,7 +14144,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[223]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14143,7 +14153,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="955"
             height="490"
-            src="visuals/tabs7.html"
+            src="2018-2021/visuals/tabs7.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -14185,7 +14195,7 @@ Percent change from 2019 to 2020:  36.715%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[224]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_counts</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14208,6 +14218,7 @@ Percent change from 2019 to 2020:  36.715%
               <span class="p">(</span><span class="s2">&quot;Portfolio&quot;</span><span class="p">,</span> <span class="n">mpl_pane</span><span class="p">[</span><span class="mi">4</span><span class="p">]))</span>
 <span class="c1">#tabs.save(&quot;visuals/tabs8.html&quot;)</span>
 <span class="n">IFrame</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s1">&#39;visuals/tabs8.html&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">960</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">570</span><span class="p">)</span>
+<span class="c1">#IFrame(src=&#39;2018-2021/visuals/tabs8.html&#39;, width=960, height=570)</span>
 </pre></div>
 
     </div>
@@ -14220,7 +14231,7 @@ Percent change from 2019 to 2020:  36.715%
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[224]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14229,7 +14240,7 @@ Percent change from 2019 to 2020:  36.715%
         <iframe
             width="960"
             height="570"
-            src="visuals/tabs8.html"
+            src="2018-2021/visuals/tabs8.html"
             frameborder="0"
             allowfullscreen
         ></iframe>
